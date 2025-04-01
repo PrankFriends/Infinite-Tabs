@@ -43,7 +43,7 @@ Press Enter and enjoy the show!
 
 Customization
 
-Replace http://xxx.com with any website URL you want to open repeatedly
+Replace the website urls with any website URL you want to open repeatedly
 Modify the dialog messages to fit your specific revenge scenario
 Change sleep 5 to adjust how frequently tabs are opened (in seconds)
 
